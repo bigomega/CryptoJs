@@ -487,5 +487,5 @@ CryptoJS can convert from encoding formats such as Base64, Latin1 or Hex to Word
 
 ## Thanks
 This is a replication of work  
-from: [Google Code](https://code.google.com/p/crypto.js/)  
+from: [Google Code](https://code.google.com/p/crypto-js/)  
 by: [Jeff Mott](https://code.google.com/u/Jeff.Mott.OR/ "Google +")
