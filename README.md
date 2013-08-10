@@ -2,38 +2,36 @@
 
 JavaScript implementations of standard and secure cryptographic algorithms
 
+
 # Quick-start Guide
-##### [Hashers](#hashers)
-* [The Hasher Algorithms](#the-hasher-algorithms)
-  1. [MD5](#md5)
-  2. [SHA-1](#sha-1)
-  3. [SHA-2](#sha-2)
-  4. [SHA-512](#sha-512)
-  5. [SHA-3](#sha-3)
-  6. [RIPEMD-160](#ripemd-160)
-* [The Hasher Input](#the-hasher-input)
-* [The Hasher Output](#the-hasher-output)
-* [Progressive Hashing](#progressive-hashing)
-
-##### [HMAC](#hmac)
-* [Progressive HMAC Hashing](#progressive-hmac-hashing)
-
-##### [PBKDF2](#pbkdf2)
-##### [Ciphers](#ciphers)
-* [The Cipher Algorithms](#the-cipher-algorithms)
-  1. [AES](#aes)
-  2. [DES, Triple DES](#des,-triple-des)
-  3. [Rabbit](#rabbit)
-  4. [RC4, RC4Drop](#rd4,-rc4drop)
-* [Custom Key and IV](#custom-key-and-iv)
-* [Block Modes and Padding](#block-modes-and-Padding)
-* [The Cipher Input](#the-cipher-input)
-* [The Cipher Output](#the-cipher-output)
-* [Progressive Ciphering](#progressive-ciphering)
-* [Interoperability](#interoperability)
-  * [With OpenSSL](#with-openssl)
-
-##### [Encoders](#encoders)
+* [Hashers](#hashers)
+  * [The Hasher Algorithms](#the-hasher-algorithms)
+      1. [MD5](#md5)
+      2. [SHA-1](#sha-1)
+      3. [SHA-2](#sha-2)
+      4. [SHA-512](#sha-512)
+      5. [SHA-3](#sha-3)
+      6. [RIPEMD-160](#ripemd-160)
+  * [The Hasher Input](#the-hasher-input)
+  * [The Hasher Output](#the-hasher-output)
+  * [Progressive Hashing](#progressive-hashing)
+* [HMAC](#hmac)
+  * [Progressive HMAC Hashing](#progressive-hmac-hashing)
+* [PBKDF2](#pbkdf2)
+* [Ciphers](#ciphers)
+  * [The Cipher Algorithms](#the-cipher-algorithms)
+      1. [AES](#aes)
+      2. [DES, Triple DES](#des,-triple-des)
+      3. [Rabbit](#rabbit)
+      4. [RC4, RC4Drop](#rd4,-rc4drop)
+  * [Custom Key and IV](#custom-key-and-iv)
+  * [Block Modes and Padding](#block-modes-and-Padding)
+  * [The Cipher Input](#the-cipher-input)
+  * [The Cipher Output](#the-cipher-output)
+  * [Progressive Ciphering](#progressive-ciphering)
+  * [Interoperability](#interoperability)
+      * [With OpenSSL](#with-openssl)
+* [Encoders](#encoders)
 
 
 ## Hashers
@@ -318,20 +316,20 @@ By default, 192 words (768 bytes) are dropped, but you can configure the algorit
     var encrypted = CryptoJS.AES.encrypt("Message", "Secret Passphrase", { mode: CryptoJS.mode.CFB, padding: CryptoJS.pad.AnsiX923 });
 ```
 CryptoJS supports the following modes:
-
 * CBC (the default)
 * CFB
 * CTR
 * OFB
 * ECB
-And CryptoJS supports the following padding schemes:
 
+And CryptoJS supports the following padding schemes:
 * Pkcs7 (the default)
 * Iso97971
 * AnsiX923
 * Iso10126
 * ZeroPadding
 * NoPadding
+
 ### The Cipher Input
 For the plaintext message, the cipher algorithms accept either strings or instances of CryptoJS.lib.WordArray.
 
